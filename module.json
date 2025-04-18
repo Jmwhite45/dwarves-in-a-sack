@@ -1,0 +1,29 @@
+{
+  "id": "dwarves-in-a-sack",
+  "title": "Dwarves in a sack",
+  "version": "0.1",
+  "esmodules": [
+    "dwarves-in-a-sack.js"
+  ],
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {}
+      }
+    ]
+  },
+  "description": "Allows actors to be put into containers",
+  "authors": [
+    {
+      "name": "jmwhite45",
+      "discord": "TheRedMage",
+      "flags": {}
+    }
+  ]
+}
