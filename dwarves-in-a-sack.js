@@ -16,6 +16,8 @@ Hooks.on("init", function(){
 })
 
 Hooks.on("dnd5e.dropItemSheetData",function(container, app, data){
+    if(container.type != "container") return;
+
     if(data.type == "Actor"){
         let actor = game.actors.get(data.uuid.replace("Actor.",""))
 
@@ -23,7 +25,7 @@ Hooks.on("dnd5e.dropItemSheetData",function(container, app, data){
             const toCreate = await Item.implementation.createWithContents([actorItemData], {
                 container: container,
             })
-            const created = Item.implementation.createDocuments(toCreate, { pack: container.pack, parent: container.actor, keepId: true });
+            const created = Item.implementation.createDocuments(toCreate, { pack: container.pack, parent: container.actor, keepId: true, permission: container.permission});
         })
     }
 })
