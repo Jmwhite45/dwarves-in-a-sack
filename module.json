@@ -25,5 +25,9 @@
       "discord": "TheRedMage",
       "flags": {}
     }
-  ]
+  ],
+  "url": "https://github.com/Jmwhite45/dwarves-in-a-sack",
+  "download": "https://github.com/Jmwhite45/dwarves-in-a-sack/releases/latest/download/module.zip",
+  "manifest": "https://github.com/Jmwhite45/dwarves-in-a-sack/releases/latest/download/module.json",
+  "bugs":"https://github.com/Jmwhite45/dwarves-in-a-sack/issues"
 }
